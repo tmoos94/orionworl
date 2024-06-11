@@ -30,7 +30,8 @@ button,
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 fieldset,
@@ -87,34 +88,21 @@ body {
 
 /* 뷰표트 변환시 폰트크기 자동확대 방지 */
 input[type=text], input[type=password], input[type=submit], input[type=search] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   border-radius: 0;
 }
 input:checked[type=checkbox] {
   background-color: #666;
-  -webkit-appearance: checkbox;
-     -moz-appearance: checkbox;
-          appearance: checkbox;
 }
 
 button {
-  -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
   border-radius: 0;
 }
 
 input[type=button], input[type=submit], input[type=reset], input[type=file] {
-  -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
   border-radius: 0;
 }
 input[type=search]::-webkit-search-cancel-button {
   -webkit-appearance: none;
-          appearance: none;
 }
 
 /* 기본 폰트 설정 */
@@ -123,17 +111,21 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
-  color: #222;
 }
 
 /* desktop */
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 16px;
+  }
+}
 /* color값은 디자인가이드에 맞게사용 */
 a {
   color: #333;
   text-decoration: none;
 }
 a:active, a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 address,
@@ -259,8 +251,7 @@ legend {
   content: "";
 }
 
-#header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}/*# sourceMappingURL=styles.css.map */
+.orion {
+  background-color: black;
+  color: red;
+}/*# sourceMappingURL=style.css.map */

@@ -54,6 +54,7 @@ q {
 }
 
 blockquote {
+
     &:before,
     &:after {
         content: '';
@@ -62,6 +63,7 @@ blockquote {
 }
 
 q {
+
     &:before,
     &:after {
         content: '';
@@ -98,6 +100,7 @@ body {
 /* 뷰표트 변환시 폰트크기 자동확대 방지 */
 
 input {
+
     &[type='text'],
     &[type='password'],
     &[type='submit'],
@@ -118,6 +121,7 @@ button {
 }
 
 input {
+
     &[type='button'],
     &[type='submit'],
     &[type='reset'],
@@ -174,16 +178,16 @@ var {
 
 hr {
     display: none;
-}
-
-input[type='password'] {
-    font-family: 'Malgun Gothic';
-}
-
-/* 웹폰트 사용시 점이 안보임 - 기본 폰트 사용  */
-/* skipnavigation */
-
-#u-skip {
+    }
+    
+    input[type='password'] {
+        font-family: 'Malgun Gothic';
+        }
+        
+        /* 웹폰트 사용시 점이 안보임 - 기본 폰트 사용  */
+        /* skipnavigation */
+        
+        #u-skip {
     position: relative;
     z-index: 3000;
 
@@ -199,7 +203,7 @@ input[type='password'] {
         text-decoration: none;
         text-align: center;
         opacity: 0;
-        
+
         &:focus {
             top: 0;
             opacity: 1;
@@ -228,10 +232,6 @@ input[type='password'] {
     text-indent: -9999px;
 }
 
-#orion{
-    background-color: black;
-    color: red;
-}
 /* 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */
 
 .ir-wa {
